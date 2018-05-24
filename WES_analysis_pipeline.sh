@@ -7,7 +7,7 @@ bwa mem /home/ubuntu/Notebooks/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GR
 sambamba view -S -f bam na12878_wes.sam > na12878_wes.bam
 
 # Sort the BAM file
-sambamba sort na12878_wes.sorted.bam
+sambamba sort na12878_wes.bam
 
 # Mark duplicates
 sambamba markdup \na12878_wes.sorted.bam \dedupped_na12878_wes.sorted.bam
